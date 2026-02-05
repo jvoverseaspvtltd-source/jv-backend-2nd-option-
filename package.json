@@ -1,0 +1,49 @@
+{
+  "name": "jv-backend-core",
+  "version": "1.0.0",
+  "description": "Backend Core for JV Overseas",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "pm2:start": "pm2 start ecosystem.config.js --env production",
+    "pm2:stop": "pm2 delete jv-backend-core || true",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.94.1",
+    "axios": "^1.13.4",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dayjs": "^1.11.19",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.5.1",
+    "express-validator": "^7.3.1",
+    "helmet": "^7.2.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.10.1",
+    "pdf-lib": "^1.17.1",
+    "pdfkit": "^0.17.2",
+    "sharp": "^0.34.5",
+    "supabase": "^1.226.4",
+    "uuid": "8.3.2",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "backend",
+    "api",
+    "express",
+    "supabase"
+  ],
+  "author": "JV Overseas",
+  "license": "ISC"
+}
